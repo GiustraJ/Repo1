@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Positioning Practice</title>
+
+    <style>
+
+        .text-center{
+
+            text-align: center;
+
+        }
+
+
+
+        .container{
+
+            width: calc(100% - 12px);
+
+            height: 500px;
+
+            border: 1px solid black;
+
+            margin: 5px;
+            
+            
+
+        }
+        .firstContainer{position:relative}
+        .thirdContainer{position:relative}
+
+
+
+        .content{
+
+            width: 100px;
+
+            height: 100px;
+
+            background-color: red;
+
+            margin: 5px;
+
+            line-height: 100px;
+
+            color: white;
+
+        }
+.one-1{position: absolute;bottom:0px;right:0px;}
+.one-3{position: absolute;top: calc(50% - 55px);left: calc(50% - 55px);}
+.two-1{position:absolute;top:0px;left:0px;}
+.two-2{position: absolute;bottom:0px;left:0px;}
+.two-3{position: fixed;left: calc(50% - 55px);top:10px;}
+/* .three-1{position:absolute;left:400px;top:100px;} */
+/* .three-2{position:absolute;left:400px;top:205px;} */
+/* .three-3{position:absolute;left:400px;top:310px;} */
+
+.three{position: relative; left:400px;top:100px;}
+    </style>
+
+</head>
+
+<body>
+
+<h1 class="text-center">Position the elements below according to the comments in the file. Changing any styling needed.</h1>
+
+
+
+<!--Move 1-1 to the bottom right corner of .firstContainer-->
+
+<!--Move 1-2 to the top left corner of .firstContainer-->
+
+<!--Move 1-3 to the middle of .firstContainer-->
+
+<div class="container firstContainer">
+
+    <div class="content text-center one-1">1-1</div>
+
+    <div class="content text-center one-2">1-2</div>
+
+    <div class="content text-center one-3">1-3</div>
+
+</div>
+
+
+
+
+
+<!--Move 2-1 to the top left of the page but let it disappear as you scroll-->
+
+<!--Move 2-2 to the bottom left of the page but let it disappear as you scroll-->
+
+<!--Move 2-3 to the middle top of the page and let it stay there as you scroll-->
+
+<div class="container secondContainer">
+
+    <div class="content text-center two-1">2-1</div>
+
+    <div class="content text-center two-2">2-2</div>
+
+    <div class="content text-center two-3">2-3</div>
+
+</div>
+
+
+
+<!--Move 3-1 through 3-3 400px to the right and 100px down inside .thirdContainer-->
+
+<div class="container thirdContainer">
+
+    <div class="content text-center three">3-1</div>
+
+    
+
+    <div class="content text-center three">3-3</div>
+
+    <div class="content text-center three">3-2</div>
+
+</div>
+
+</body>
+
+</html>
