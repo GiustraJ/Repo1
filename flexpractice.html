@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+.box1{flex-basis:32%;  min-height:85px; background-color:blue; color:white; text-align:center; margin: 3px; float: left}
+.header{width:100%; height:75px; background-color:black; color:white; text-align:center; font-size:25px;}
+.footer{width:100%; height:75px; background-color:black; color:white; text-align:center; }
+.box2{width:350px; min-height:85px; background-color:red; color:white; text-align:center; float: right; margin: 3px;}
+.parent{display:flex;}
+.container1{float:left; width:75%; display: flex; align-items: flex-start; height: 100%;
+  flex-wrap: wrap;}
+  .container2{float:right; width:25%; display: flex; align-items: flex-start; flex-wrap: wrap;}
+  .order1{order: -6;}
+  .order2{order: -5;}
+  .order3{order: -4}
+  .order4{order:-3}
+  .order5{order:-2}
+  .order6{order:-1}
+
+</style>
+
+
+</head>
+
+
+<body>
+    <div class="header"> Header</div>
+    <div class="parent">
+        <div class="container1">
+        <div class="box1 order1">1</div>
+        <div class="box1 order3">2</div>
+        <div class="box1 order6">3</div>
+        <div class="box1 order5">4</div>
+        <div class="box1 order4">5</div>
+        <div class="box1 order2">6</div>
+        </div>
+        <div class="container2">
+
+        <div class="box2">1</div>
+        <div class="box2 order1">
+            2
+        </div>
+        <div class="box2 order2">3
+
+        </div>
+
+        </div>
+    </div>
+        <div class="footer"> Footer</div>
+    
+</body>
+</html>

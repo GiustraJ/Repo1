@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practice For Floats And Clears</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+<style>
+.logo{float: left; height: 50px; width:50px;}
+.header{height:50px; width:100%; background-color: grey; color:whitesmoke; text-shadow: 2px 2px black;}
+.center{text-align: center; font}
+.nav{height:30px; width:100%; background-color: lightgrey;}
+.float-left{float:left;}
+.float-right{float:right;}
+.inline{display:inline-block}
+.leftwidth{width:24%;}
+.rightwidth{width:74%;}
+.img{height:125px; width:auto;margin: 5px;}
+.clearboth{clear:both;}
+.navsize{width:24vw;}
+.padding{padding: right: 100px;} 
+.activelink{backgound-color:grey}
+
+
+
+</style>
+</head>
+  
+  <body>
+    <div>
+      <header>
+        <div class= "header">
+          <img
+            class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bear_Alaska_%283%29.jpg/1280px-Bear_Alaska_%283%29.jpg"
+          />
+          <h1 class="center">Hungry Bear Fisheries</h1>
+        </div>
+      </header>
+      <nav class="nav center">
+        <a class="float-left hover navsize" href="#">Our Fish</a>
+        <a class="float-left navsize" href="#">Conservation</a>
+        <a class="float-left navsize" href="#">About Us</a>
+        <a class="float-left navsize" href="#">Contact Us</a>
+      </nav>
+      <div class="float-left center leftwidth">
+        <h3>Currently Available</h3>
+        <ul>
+          <li>Atlantic Salmon</li>
+          <li>Coho Salmon</li>
+          <li>Chinook Salmon</li>
+          <li>Sockeye Salmon</li>
+          <li>Pink Salmon</li>
+          <li>Rainbow Trout</li>
+        </ul>
+      </div>
+      <div class="float-right padding rightwidth">
+        <p class="padding">
+          <img
+            class="float-left img"
+            src="http://espacepourlavie.ca/sites/espacepourlavie.ca/files/styles/gal-photo-large/public/salmo-salar-a028_p6_0.jpg?itok=ClZ2RwBd"
+          />
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <div class="float-right rightwidth">
+        <p>
+          <img class="float-left img"
+            
+            src="http://caltrout.org/wp-content/uploads/2017/05/coho-slider.png"
+          />
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <div class="float-right rightwidth">
+        <p>
+          <img class="float-left img"
+            
+            src="http://oceana.org/sites/default/files/styles/lightbox_full/public/chinook_salmon.jpg?itok=SlAYpTyq"
+          />
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </div>
+      <footer>
+        <div class="clearboth header center">
+          <h1>Only The Freshest Fish Around</h1>
+        </div>
+      </footer>
+    </div>
+    <!-- end pageContainer -->
+  </body>
+</html>
